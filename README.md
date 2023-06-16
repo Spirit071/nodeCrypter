@@ -2,4 +2,4 @@
 
 
 ## This program is an unsolveable encryption script.
-## It hashes a random decimal point, 10 characters long, usually 
+## It hashes a random decimal point, usually 10 characters long. 
