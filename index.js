@@ -5,8 +5,9 @@ const hasher = () => {
 }
 
 const compare = (hash, str) => {
-  if (!hash.algorithm === crypto.createHash('sha512').algorithm) return false
-  return hash === crypto.createHash('sha512').update(str).digest('hex')
+  const sha = crypto.createHash('sha512')
+  if (!hash.algorithm === sha.algorithm) return false
+  return hash === sha.update(str).digest('hex')
 }
 
 const str = hasher().repeat(4)
